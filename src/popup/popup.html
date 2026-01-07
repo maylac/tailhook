@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailhook Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🪝 Tailhook</h1>
+      <p class="subtitle">LLM Response Hook</p>
+    </header>
+
+    <main>
+      <div class="setting-row">
+        <div class="setting-info">
+          <label for="toggle-enabled">Enable Extension</label>
+          <p class="description">Detect ChatGPT responses and trigger key combinations</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-enabled" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="info-section">
+        <h3>Key Combination</h3>
+        <div class="key-display">
+          <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <h3>Supported Sites</h3>
+        <ul class="site-list">
+          <li>✓ ChatGPT (chat.openai.com)</li>
+          <li>✓ ChatGPT (chatgpt.com)</li>
+        </ul>
+      </div>
+
+      <div class="status-section">
+        <div id="status" class="status">
+          <span class="status-indicator"></span>
+          <span id="status-text">Active</span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="version">v0.1.0</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
